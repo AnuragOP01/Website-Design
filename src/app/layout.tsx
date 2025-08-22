@@ -1,5 +1,5 @@
 import 'react-quill/dist/quill.snow.css';
-
+import { Providers } from './providers';
 import { auth } from "@/auth";
 import { Toaster } from "@/components/ui/toaster";
 import type { Metadata } from "next";
@@ -28,7 +28,10 @@ export default async function RootLayout({
     <SessionProvider session={session}>
       <html lang="en">
         <body className={inter.className}>
-            {children} <Toaster />
+<Providers>
+          {children}
+        </Providers>
+                    <Toaster />
         </body>
       </html>
     </SessionProvider>
