@@ -152,6 +152,9 @@ importers:
       react-rich-text-editor:
         specifier: ^2.1.2
         version: 2.1.2(@typescript-eslint/parser@8.34.1(eslint@9.29.0(jiti@1.21.7))(typescript@5.8.3))(eslint@9.29.0(jiti@1.21.7))(popper.js@1.16.1)(react-router@4.3.1(react@19.1.0))(typescript@5.8.3)
+      react-scroll-parallax:
+        specifier: ^3.4.3
+        version: 3.4.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react-spinners:
         specifier: ^0.15.0
         version: 0.15.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -3403,6 +3406,9 @@ packages:
   bcryptjs@3.0.2:
     resolution: {integrity: sha512-k38b3XOZKv60C4E2hVsXTolJWfkGRMbILBIe2IBITXciy5bOsTKot5kDrf3ZfufQtQOUN5mXceUEpU1rTl9Uog==}
     hasBin: true
+
+  bezier-easing@2.1.0:
+    resolution: {integrity: sha512-gbIqZ/eslnUFC1tjEvtz0sgx+xTK20wDnYMIA27VA04R7w6xxXQPZDbibjA9DTWZRA2CXtwHykkVzlCaAJAZig==}
 
   bfj@6.1.1:
     resolution: {integrity: sha512-+GUNvzHR4nRyGybQc2WpNJL4MJazMuvf92ueIyA0bIkPRwhhQu3IfZQ2PSoVPpCBJfmoSdOxu5rnotfFLlvYRQ==}
@@ -7151,6 +7157,10 @@ packages:
   pako@1.0.11:
     resolution: {integrity: sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==}
 
+  parallax-controller@1.7.1:
+    resolution: {integrity: sha512-facVMEBnUynzMN7hCSqyNpF6uyCpVIl4XAUyTR9D8q2JlhgyPY6bZtj/OkFk3+Cpka1TnYCppQb8BzDWHtSaZg==}
+    engines: {node: '>=12'}
+
   parallel-transform@1.2.0:
     resolution: {integrity: sha512-P2vSmIu38uIlvdcU7fDkyrxj33gTUy/ABO5ZUbGowxNCopBq/OoD42bP4UmMrJoPyk4Uqf0mu3mtWBhHCZD8yg==}
 
@@ -8215,6 +8225,13 @@ packages:
     peerDependencies:
       eslint: '*'
       react: '*'
+
+  react-scroll-parallax@3.4.5:
+    resolution: {integrity: sha512-4NLZQ8cZEUyxoA95DfrXWneOOUSFrFmpM0dZNzMErmuJ0LzY+CCw8Xw0hqB6xxHWxNknfs46AozyIPSWkZeucA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16.8.0-0 || >=17.0.1 || ^18.0.0
+      react-dom: ^16.8.0-0 || >=17.0.1 || ^18.0.0
 
   react-select@2.4.4:
     resolution: {integrity: sha512-C4QPLgy9h42J/KkdrpVxNmkY6p4lb49fsrbDk/hRcZpX7JvZPNb6mGj+c5SzyEtBv1DmQ9oPH4NmhAFvCrg8Jw==}
@@ -13583,6 +13600,8 @@ snapshots:
 
   bcryptjs@3.0.2: {}
 
+  bezier-easing@2.1.0: {}
+
   bfj@6.1.1:
     dependencies:
       bluebird: 3.7.2
@@ -18166,6 +18185,10 @@ snapshots:
 
   pako@1.0.11: {}
 
+  parallax-controller@1.7.1:
+    dependencies:
+      bezier-easing: 2.1.0
+
   parallel-transform@1.2.0:
     dependencies:
       cyclist: 1.0.2
@@ -19744,6 +19767,12 @@ snapshots:
       - utf-8-validate
       - webpack-cli
       - webpack-command
+
+  react-scroll-parallax@3.4.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+    dependencies:
+      parallax-controller: 1.7.1
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
 
   react-select@2.4.4(react-dom@16.14.0(react@16.14.0))(react@16.14.0):
     dependencies:
