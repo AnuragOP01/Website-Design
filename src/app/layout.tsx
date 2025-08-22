@@ -1,5 +1,5 @@
 import 'react-quill/dist/quill.snow.css';
-import { Providers } from './providers';
+import { Providers } from './Providers';
 import { auth } from "@/auth";
 import { Toaster } from "@/components/ui/toaster";
 import type { Metadata } from "next";
